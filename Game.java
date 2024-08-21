@@ -1,6 +1,6 @@
 import java.util.*;
 public class Game {
-    private static void d(int[][] arr, String a){
+    private static void move(int[][] arr, String a){
         if(a.equals("d")){
             e:
             for(int i = 0;i<arr.length;i++){
@@ -72,7 +72,7 @@ public class Game {
             String dir = sc.next();
             count++;
             dir = dir.toLowerCase();
-            d(arr, dir);
+            move(arr, dir);
             printarr(arr);
         }
         System.out.println("Game Completed! Total Moves: " + count);
